@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <title>Men's Clothing</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        const name = document.querySelectorAll(".name");
+const price = document.querySelectorAll("#price");
+const button = document.querySelectorAll("button");
+const cart = []
+const addToCart = () => {
+    for (var i = 0; i < 1; i++) {
+        cart.push(name[i].innerText)
+        cart.push(parseInt(price[i].innerText))
+    }
+    console.log(cart)
+}
+    </script>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="men.html">Men's Clothing</a>
+        <a href="women.html">Women's Clothing</a>
+        <a href="kids.html">Kids</a>
+        <a href=""> Accessories </a>
+    </div>
+    <div class="row">
+        <div class="column">
+            <a href="https://www.amazon.in/Lyriq-Shirt-Casual-Stylish-Printed/dp/B0C1JM885B?ref_=Oct_d_orecs_d_1968093031_0&pd_rd_w=EoFIw&content-id=amzn1.sym.93ba5d53-08f1-4b2a-858e-ca1d6d01b4ad&pf_rd_p=93ba5d53-08f1-4b2a-858e-ca1d6d01b4ad&pf_rd_r=7PP0W3M0WQ66QFAG2A6A&pd_rd_wg=4kwEL&pd_rd_r=be984a76-89ee-4013-8928-0300127cb979&pd_rd_i=B0C1JM885B">
+            <img src="C:\Users\GRIET\Desktop\Assignment\Images\1s.jpg" width=200 height=200  >
+            <div>
+                <div>
+                        <h3>Lyriq Casual Shirt for Men <br>₹500</h3>
+                </div>
+            </a>
+            <a href="cart.html">
+               <button><b>Add to Cart</b></button> 
+            </a>
+            </div>
+        </div>
+        <div class="column">
+            <img src="C:\Users\GRIET\Desktop\Assignment\Images\2s.jpg" width=200 height=200 >
+            <div>
+                <a href="https://www.amazon.in/DHRUVI-TRENDZ-Tropical-Printed-Turn-Down/dp/B0BY8SF4DL?ref_=Oct_d_oup_d_1968093031_1&pd_rd_w=Hhfga&content-id=amzn1.sym.f5e83e00-a666-492b-b882-5fa6fba3548e&pf_rd_p=f5e83e00-a666-492b-b882-5fa6fba3548e&pf_rd_r=7PP0W3M0WQ66QFAG2A6A&pd_rd_wg=4kwEL&pd_rd_r=be984a76-89ee-4013-8928-0300127cb979&pd_rd_i=B0BY8SF4DL">
+                    <div>
+                        <h3>Men Stylish Shirt with Preppy Short Sleeve <br>₹450</h3>
+                </div></a>
+                <a href="cart.html">
+                    <button><b>Add to Cart</b></button> 
+                 </a>
+            </div>
+        </div>
+        <div class="column">
+            <img src="C:\Users\GRIET\Desktop\Assignment\Images\3s.jpg" width=200 height=200 >
+            <div>
+                <a href="https://www.amazon.in/DHRUVI-TRENDZ-Tropical-Printed-Turn-Down/dp/B0BY8SF4DL?ref_=Oct_d_oup_d_1968093031_1&pd_rd_w=Hhfga&content-id=amzn1.sym.f5e83e00-a666-492b-b882-5fa6fba3548e&pf_rd_p=f5e83e00-a666-492b-b882-5fa6fba3548e&pf_rd_r=7PP0W3M0WQ66QFAG2A6A&pd_rd_wg=4kwEL&pd_rd_r=be984a76-89ee-4013-8928-0300127cb979&pd_rd_i=B0BY8SF4DL">
+                    <div>
+                        <h3>Dennis Lingo Men's Solid Slim Fit Casual Shirt<br>₹650</h3>
+                </div></a>
+                <a href="cart.html">
+                    <button><b>Add to Cart</b></button> 
+                 </a>
+            </div>
+        </div>
+        <div class="column">
+            <img src="C:\Users\GRIET\Desktop\Assignment\Images\4s.jpg" width=200 height=200 >
+            <div>
+                <a href="https://www.amazon.in/DHRUVI-TRENDZ-Tropical-Printed-Turn-Down/dp/B0BY8SF4DL?ref_=Oct_d_oup_d_1968093031_1&pd_rd_w=Hhfga&content-id=amzn1.sym.f5e83e00-a666-492b-b882-5fa6fba3548e&pf_rd_p=f5e83e00-a666-492b-b882-5fa6fba3548e&pf_rd_r=7PP0W3M0WQ66QFAG2A6A&pd_rd_wg=4kwEL&pd_rd_r=be984a76-89ee-4013-8928-0300127cb979&pd_rd_i=B0BY8SF4DL">
+                    <div>
+                        <h3>Dennis Lingo Men's Solid Slim Fit Casual Shirt<br>₹650</h3>
+                </div></a>
+                <a href="cart.html">
+                    <button><b>Add to Cart</b></button> 
+                 </a>
+            </div>
+        </div>
+        <div class="column">
+        <img src="C:\Users\GRIET\Desktop\Assignment\Images\5s.jpg" width=200 height=200>
+        <p class="name">White Formal Shirt</p>
+        <p class="pricetitle">Price: <span id="price"></span> ₹700</p>
+        <form>
+            <button type="button" onclick="addToCart()"><b>Add to cart</b></button>
+        </form>
+        </div>
+        
+        <div class="column">
+        <img src="C:\Users\GRIET\Desktop\Assignment\Images\5s.jpg" width=200 height=200 >
+        <p class="name">Blue Formal Shirt</p>
+        <p class="pricetitle">Price: <span id="price"></span>₹800</p>
+        <form>
+            <button type="button" onclick="addToCart()"><b>Add to cart</b></button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
+
